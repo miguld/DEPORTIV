@@ -1,0 +1,86 @@
+/*reset para tener un control de la  web*/
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(40, 41, 42);
+    
+}
+
+header{
+    height: 100px;
+    display: flex; /* este flex es para colocar  el contenedor del menu [][][][] de esta forma en la pagina web*/
+    padding: 0 50px;
+    justify-content: space-between; /*para que queden separados los elelmentos del header []   []   []   []*/
+    align-items: center; /*esto es para que queden centrados los elemento del header en el contenedor */
+    border: 0.2px solid orange;
+}
+
+.titulo1{
+text-transform: uppercase;
+color: antiquewhite;
+padding-right: 0% ;
+margin-left: 0%;
+text-align: left; 
+    
+}
+
+nav a{
+    color: white;
+    margin: 2px;
+    text-decoration: none;
+    padding: 3px;
+    
+}
+
+nav a:hover{
+    color: rgb(241, 205, 139);
+}
+
+.carrito{
+    color: white;
+    cursor: pointer;
+}
+
+
+.pantalonetas{
+    display: flex;
+    border: 1px solid orange ;
+}
+
+.hombre1{
+    border: 1px solid orange;
+
+}
+
+.Camisa{
+    margin-top: 15%;
+    display: flex;
+}
+
+
+.licra{
+    display: flex;
+    margin-top: 15%;
+}
+
+@media(max-width:768px){
+    .pantalonetas{flex-direction: column;} 
+    .Camisa{flex-direction: column;}
+    .licra{flex-direction: column;}
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-direction: column;
+    }  
+}
+
+@media(max-width:768px){
+    .logo{
+        width: 25%;
+        padding-top: 10%;
+    }
+}
